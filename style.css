@@ -1,0 +1,98 @@
+body{
+	display: grid;
+	grid-template-columns:  1fr 18fr;
+	font-family: Arial;
+}
+
+.main_window{
+	display: flex;
+	flex-direction: column;
+
+}
+
+#buttom{
+	display: grid;
+	grid-template-columns:  1fr 5fr;
+}
+
+#left{
+	padding: 1em;
+}
+
+
+#right{
+	width: 100;
+}
+
+.title{
+	background-color: #ededed;
+	padding: 1em;
+	margin-top: 0;
+}
+
+button{
+	float:  right;
+}
+
+.ic-icon-svg{
+
+	width: 30px;
+	height: 30px;
+	margin:  8px;
+
+
+}
+
+.assignment{
+	border: 1px solid #d9dbda;
+	margin-top: 20px;
+	margin-buttom: 20px;
+
+}
+
+
+#canvas_menu{
+	align-items: center;
+	display: flex;
+	margin-right: 20px;
+	flex-direction: column;
+	background-color: #ededed;
+
+}
+
+
+#account{
+	align-content: center;
+	background-color: #ededed;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	display: inline-block;
+	border-radius: 50%;
+	margin:  8px;
+}
+
+.logomark{
+	background-color: #993333;
+}
+
+
+
+#left{
+	color:#993333 ;
+}
+
+#assignment{
+	color: black;
+}
+
+.filterButton{
+	height: 3em;
+	margin: 1em;
+}
+
+#showByDate{
+	background-color: #8c8c8c;
+	color: white;
+}
+

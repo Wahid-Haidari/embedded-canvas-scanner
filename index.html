@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Embedded Canvas Scanner</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<canvas-menu></canvas-menu>
+
+
+	<div class="main_window">
+		<div id="top">
+			<h1>C S-4063-001 > Assignments </h1>	
+		</div>
+		<hr width="100%">
+
+		<div id="buttom">
+
+			<div id="left">
+				<p>Home</p>
+				<p>Announcements</p>
+				<p id="assignment">Assignments</p>
+				<p>Discussions</p>
+				<p>Grades</p>
+				<p>People</p>
+				<p>Pages</p>
+				<p>Files</p>
+				<p>Syllabus</p>
+				<p>BigBlueButton</p>
+				<p>Collaborations</p>
+				<p>New Analytics</p>
+				<p>TopHat LTI 1.3</p>
+				<p>Scanner</p>
+			</div>
+
+			<div id="right">
+				<div id="filter">
+					<textarea placeholder="Search for assignment"></textarea>
+					<button class="filterButton">SHOW BY DATE</button>
+					<button id="showByDate" class="filterButton">SHOW BY TYPE</button>
+					<hr width="100%">
+				</div>
+
+				<div class="assignment" id="upcoming">
+					<h3 class="title">Upcoming assignment</h3>
+					<h3>&emsp;&emsp;Project Progress Review</h3>
+					<p>&emsp;&emsp;Available until Mar 28 at 5:00pm Mar 28 at 5pm 
+					| Due Mar 25 at 5pm Mar 25 at 5pm
+					| -/20 pts</p>
+				</div>
+
+				<div class="assignment" id="past">
+					<h3 class="title">Past Assignments</h3>
+					<h3>&emsp;&emsp;project Show And Tell</h3>
+					<p>&emsp;&emsp; Closed | Due Mar 9 at 5pm |
+					-/20 pts  |  Not Yet Graded</p>
+
+					<h3>&emsp;&emsp;Homework - Prototype C</h3>
+					<p>&emsp;&emsp; Closed | Due Mar 8 at 11pm |
+					-/20 pts  |  Not Yet Graded</p>
+
+					<h3>&emsp;&emsp;Homework - Design C</h3>
+					<p>&emsp;&emsp; Closed | Due Mar 1 at 11pm |
+					-/20 pts  |  Not Yet Graded</p>
+
+					<h3>&emsp;&emsp;Homework - Design B</h3>
+					<p>&emsp;&emsp; Closed | Due Feb 22 at 11pm |
+					-/20 pts  |  Not Yet Graded</p>
+
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		
+	</div>
+	<script type="text/javascript" src="./component.js"></script>
+</body>
+</html>
