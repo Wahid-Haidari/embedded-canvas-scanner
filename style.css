@@ -10,17 +10,13 @@ body{
 
 }
 
-#buttom{
+#bottom{
 	display: grid;
 	grid-template-columns:  1fr 5fr;
 }
 
-#left{
-	padding: 1em;
-}
 
-
-#right{
+#main-page{
 	width: 100;
 }
 
@@ -30,18 +26,6 @@ body{
 	margin-top: 0;
 }
 
-button{
-	float:  right;
-}
-
-.ic-icon-svg{
-
-	width: 30px;
-	height: 30px;
-	margin:  8px;
-
-
-}
 
 .assignment{
 	border: 1px solid #d9dbda;
@@ -50,41 +34,6 @@ button{
 
 }
 
-
-#canvas_menu{
-	align-items: center;
-	display: flex;
-	margin-right: 20px;
-	flex-direction: column;
-	background-color: #ededed;
-
-}
-
-
-#account{
-	align-content: center;
-	background-color: #ededed;
-	height: 30px;
-	width: 30px;
-	text-align: center;
-	display: inline-block;
-	border-radius: 50%;
-	margin:  8px;
-}
-
-.logomark{
-	background-color: #993333;
-}
-
-
-
-#left{
-	color:#993333 ;
-}
-
-#assignment{
-	color: black;
-}
 
 .filterButton{
 	height: 3em;
