@@ -18,7 +18,7 @@ class CourseMenu extends HTMLElement {
   	<div id="course-menu">
 		<p>Home</p>
 		<p>Announcements</p>
-		<p id="assignmentOption">Assignments</p>
+		<p id="assignmentOption"><a href="index.html">Assignments</a></p>
 		<p>Discussions</p>
 		<p>Grades</p>
 		<p>People</p>

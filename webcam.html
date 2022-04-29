@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+</head>
+<body>
+	<style>
+		#video-wrap{
+
+		}
+
+		button{
+			color: black;
+			background: lightblue;
+		}
+	</style>
+
+
+
+	<div id="video-wrap" >
+
+		<video id="video" width="750px" ></video>
+		<button download id="snap" onClick="takeAPicture() , ShowAddAndFinish()">Capture</button>
+		<canvas id="canvas" ></canvas>
+		<button id="add" style="display:none;" onClick="addPicture()">Add</button>
+		<button id="finsih" onClick="finish()"><a href="upload.html">Finish</a></button>
+		<p id="pictureAdded" style="display:none;">Picture Added</p>
+		
+	</div>
+
+	<script>
+		const video = document.getElementById('video');
+		const canvas = document.getElementById('canvas');
+		const snap = document.getElementById('snap');
+		const webcam = new Webcam(video, "user", canvas);
+
+
+		webcam.start();
+
+		function takeAPicture(){
+			
+			let picture = webcam.snap();
+			//webcam.stop();
+			//document.querySelector("a".href = picture);
+			//render( picture);
+		
+		}
+
+		function ShowAddAndFinish() {
+   			document.getElementById("add").style.display = "";
+   			document.getElementById("finish").style.display = "";
+		}
+
+		function addPicture() {
+   			document.getElementById("pictureAdded").style.display = "";
+		}
+
+		
+		setTimeout(function(){
+			var msg = document.getElementById("pictureAdded");
+		}, 3000);
+
+		
+	</script>
+
+</body>
+</html>

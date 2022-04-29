@@ -7,6 +7,36 @@
 	<title></title>
 </head>
 <body>
+	<style>
+		ul {
+  			list-style-type: none;
+  			margin: 10px;
+  			padding: 1em;
+  			overflow: hidden;
+  		}
+
+		li {
+  			float: left;
+  			margin: 10px;
+  			padding: 10px;
+  			color: #993333;
+		}
+
+		li:hover {
+ 	 		border: 1px solid #d0d0d0;;
+		}
+
+		.submit{
+			display: flex;
+			flex-direction: column;
+			width: 200px ;
+			margin: 20px;
+		}
+
+		button{
+			margin: 10px;
+		}
+	</style>
 	<canvas-menu></canvas-menu>
 	
 
@@ -19,20 +49,34 @@
 		<div id="bottom">
 			<course-menu></course-menu>
 			<div id="main-page">
-				<div>
 					<h2>Project Progress Review</h2>
-					<button><a href="StartAssignment.html">Start Assignment</a></button>
-				</div>
-				
+									
 				<hr width="100%">
 				<p>Due Mar 25 by 5pm Points 20 Submitting a file upload File Types pdf Available until Mar 28 at 5pm</p>
 				<hr width="100%">
 				<p>Please see <a href="">Instructions-Project-ProgressReview.pdf</a> for instructions</p>
+				<div id="submit-window">	
+					<ul id="options" style="list-style-type: none;">
+						<li>File Upload</li>
+						<li>Dropbox</li>
+						<li>Office 365</li>
+						<li>Onedrive for Business</li>
+						<li><a href="webcam.html">Scanner</a></li>
+					</ul>
+					<div class="submit">
+						<p>Give a name to the file</p>
+						<textarea></textarea>
+						<button >Cancel</button>
+						<button >Submit Assignment</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 
 	<script type="text/javascript" src="./CanvasMenu.js"></script>
 	<script type="text/javascript" src="./CourseMenu.js"></script>
+
+
 </body>
 </html>
